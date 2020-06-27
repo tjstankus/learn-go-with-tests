@@ -14,13 +14,13 @@ func TestHello(t *testing.T) {
 
 	t.Run("say hello with name", func(t *testing.T) {
 		expected := "Hello, TJ"
-		value := Hello("TJ")
+		value := Hello("TJ", "English")
 		assertExpectedValue(t, expected, value)
 	})
 
 	t.Run("say hello with default value", func(t *testing.T) {
 		expected := "Hello, world"
-		value := Hello("")
+		value := Hello("", "English")
 		assertExpectedValue(t, expected, value)
 	})
 }
