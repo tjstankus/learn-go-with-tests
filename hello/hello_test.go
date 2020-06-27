@@ -5,8 +5,8 @@ import (
 )
 
 func TestHello(t *testing.T) {
-	expected := "Hello, world"
-	value := Hello()
+	expected := "Hello, TJ"
+	value := Hello("TJ")
 
 	if expected != value {
 		t.Errorf("expected %q, actual value %q", expected, value)
